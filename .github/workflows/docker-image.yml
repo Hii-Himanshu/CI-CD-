@@ -27,4 +27,4 @@ jobs:
     #     uses: docker/setup-buildx-action@v3 
 
     - name: Push Docker image
-      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/myapp:v1
+      run: docker push ${{ vars.DOCKERHUB_USERNAME }}/myapp:v1
